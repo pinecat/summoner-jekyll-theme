@@ -1,0 +1,51 @@
+{% assign archive = page.url | split: "/" | last %}
+
+{% if archive == "blog" or archive == "index.html" %}
+  {% if paginator.posts %}
+    {% for post in paginator.posts %}
+      <div class="listing">
+        <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+        {% include tags.html %}
+        {% include date.html %}
+        <!-- <p>{{post.excerpt | markdownify | truncatewords: 30}}</p> -->
+      </div>
+    {% endfor %}
+
+    {% include pagination.html %}
+  {% else %}
+    {% for post in site.posts %}
+      <div class="listing">
+        <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+        {% include tags.html %}
+        {% include date.html %}
+      </div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <h4>for {{archive}}</h4>
+
+  {% if paginator.posts %}
+    {% for post in paginator.posts %}
+      {% if post.tags contains archive %}
+        <div class="listing">
+          <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+          {% include tags.html %}
+          {% include date.html %}
+          <!-- <p>{{post.excerpt | markdownify | truncatewords: 30}}</p> -->
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    {% include pagination.html %}
+  {% else %}
+    {% for post in site.posts %}
+      {% if post.tags contains archive %}
+        <div class="listing">
+          <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+          {% include tags.html %}
+          {% include date.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}

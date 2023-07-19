@@ -1,0 +1,8 @@
+.spacing {
+  min-height: var(--space-s);
+  width: 100%;
+
+  @include media(breakpoint) {
+    min-height: var(--space-xxxxl);
+  }
+}

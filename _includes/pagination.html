@@ -1,0 +1,15 @@
+<div class="paginator">
+  {% if paginator.previous_page %}
+    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">newer</a>
+  {% else %}
+    <span><del>newer</del></span>
+  {% endif %}
+
+  <span>{{ paginator.page }}/{{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}">older</a>
+  {% else %}
+    <span><del>older</del></span>
+  {% endif %}
+</div>

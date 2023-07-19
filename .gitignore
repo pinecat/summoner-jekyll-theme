@@ -4,3 +4,12 @@
 .sass-cache
 _site
 Gemfile.lock
+
+# Testing data
+_config.yml
+/favicon.ico
+/archive.html
+/index.html
+/blog.html
+/404.html
+_posts

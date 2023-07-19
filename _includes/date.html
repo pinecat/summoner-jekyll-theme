@@ -1,0 +1,7 @@
+<date>
+  {% if post.date %}
+    {{post.date | date: "%m/%d/%Y"}}
+  {% else %}
+    {{page.date | date: "%m/%d/%Y"}}
+  {% endif %}
+</date>

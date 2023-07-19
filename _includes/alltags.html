@@ -1,0 +1,11 @@
+{% if site.tags %}
+  {% assign tags = site.tags | sort %}
+
+  <ul>
+    {% for tag in tags %}
+      <li><a href="/archive/tag/{{tag | first}}">{{tag | first}}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No topics found.</p>
+{% endif %}

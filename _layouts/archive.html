@@ -4,11 +4,12 @@ layout: default
 
 <div class="content">
   <div class="nav" style="margin-bottom: var(--space-i);">
-    <a href="javascript:history.back()">back</a>
     <a href="/">home</a>
     <a href="/blog/feed">rss</a>
   </div>
 
-  {{ content }}
-</div>
+  <h1>archive</h1> 
+  <p>View posts regarding a specific topic.</p>
 
+  {% include alltags.html %}
+</div>
