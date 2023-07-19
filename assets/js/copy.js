@@ -13,11 +13,11 @@ codeBlocks.forEach((block) => {
     window.navigator.clipboard.writeText(code);
 
     copyBtn.innerHTML = '<img src="/assets/img/check.svg" />';
-    copyBtn.style.border = '1px solid #64CC70';
+    copyBtn.style.border = 'none';
 
     setTimeout(() => {
       copyBtn.innerHTML = '<img src="/assets/img/copy.svg" />';
-      copyBtn.style.border = '1px solid #ffffff';
+      copyBtn.style.border = 'none';
       document.activeElement.blur();
     }, 3000);
   });

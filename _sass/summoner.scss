@@ -3,6 +3,7 @@
 @import "mixins/highlight";
 
 // Configurations
+@import "config/fonts";
 @import "config/variables";
 @import "config/reset";
 
@@ -15,6 +16,7 @@
 @import "components/paginator/link";
 @import "components/paginator/span";
 @import "components/paginator";
+@import "components/post/code";
 @import "components/post/paragraph";
 @import "components/motif";
 @import "components/spacing";

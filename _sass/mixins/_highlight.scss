@@ -67,7 +67,7 @@
 pre.highlight {
   position: relative;
   display: flex;
-  padding: 30px 0px;
+  padding: 20px 0px;
   padding-right: 35px;
   border-radius: 4px;
   overflow: scroll;
@@ -77,26 +77,19 @@ pre.highlight > button {
   position: sticky;
   flex-shrink: 0;
   opacity: 0;
-  padding: 5px;
-  height: 35px;
-  width: 35px;
+  padding: 0px;
+  height: 20px;
+  width: 20px;
   top: 0px;
-  left: 94.5%;
-  font-size: 1.5em;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
+  left: 99%;
+  font-size: var(--font-size-xxs);
+  border: none;
   background-color: #272823;
 }
 
 pre.highlight:hover > button {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 250ms;
-}
-
-pre.highlight button:hover {
-  background-color: #3c3d37;
-  transition-property: background-color;
   transition-duration: 250ms;
 }
 
