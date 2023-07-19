@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "summoner-jekyll-theme"
-  spec.version       = "1.1.1"
+  spec.version       = "1.1.2"
   spec.authors       = ["Rory Dudley"]
   spec.email         = ["rory.dudley@gmail.com"]
 
@@ -11,6 +11,4 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
-
-  spec.add_runtime_dependency "jekyll", "~> 4.3" 
 end
