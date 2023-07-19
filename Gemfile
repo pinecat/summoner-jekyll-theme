@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 gemspec
 
-gem "rouge"
-gem "kramdown"
+gem "rouge", group: "development"
+gem "kramdown", group: "development"
 
 gem "jekyll-feed", group: "development"
 gem "jekyll-paginate-v2", group: "development"
