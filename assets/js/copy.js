@@ -10,7 +10,29 @@ codeBlocks.forEach((block) => {
 
   copyBtn.addEventListener('click', () => {
     var code = block.querySelector('code').innerText.trim();
-    window.navigator.clipboard.writeText(code);
+
+    if (window.isSecureContext) {
+      window.navigator.clipboard.writeText(code);
+    } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = code;
+            
+        // Move textarea out of the viewport so it's not visible
+        textArea.style.position = "absolute";
+        textArea.style.left = "-999999px";
+            
+        document.body.prepend(textArea);
+        textArea.select();
+
+        try {
+            document.execCommand('copy');
+        } catch (error) {
+            console.error(error);
+        } finally {
+            textArea.remove();
+        }
+    }
+
 
     copyBtn.innerHTML = '<img src="/assets/img/check.svg" />';
     copyBtn.style.border = 'none';
