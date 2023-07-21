@@ -3,7 +3,7 @@
 
   <ul>
     {% for tag in tags %}
-      <li><a href="/archive/tag/{{tag | first}}">{{tag | first}}</a></li>
+      <li><a href="/archive/tag/{{tag | first}}">{{ tag | first }}</a></li>
     {% endfor %}
   </ul>
 {% else %}
