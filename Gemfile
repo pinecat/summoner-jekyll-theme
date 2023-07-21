@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 gemspec
 
+gem "rake", group: "development"
 gem "rouge", group: "development"
 gem "kramdown", group: "development"
 

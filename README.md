@@ -1,23 +1,22 @@
-# summoner
+# summoner-jekyll-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+My [Jekyll](https://jekyllrb.com/) theme for my personal blog, https://summoning.net, designed to be simple and minimal.
 
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
-
 ```ruby
-gem "summoner"
+gem "summoner-jekyll-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
-
 ```yaml
-theme: summoner
+theme: summoner-jekyll-theme
+```
+
+If you're using the `github-pages` gem, use `remote_theme` in `_config.yml` intead:
+```yaml
+remote_theme: pinecat/summoner-jekyll-theme
 ```
 
 And then execute:
@@ -26,25 +25,48 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install summoner
+    $ gem install summoner-jekyll-theme
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+#### Layouts
+
+- 404.html: Default 404 page with SMT imagery, set permalink if using pretty links
+- archive.html: List tag types based on jekyll-archives tags
+- blog.html: Post listings, pagination supported via jekyll-paginate-v2
+- default.html: Minimum layout necessary for including CSS and JS
+- index.html: Homepage with SMT imagery and navigation
+- page.html: Use for miscellaneous pages (about, contact, etc.)
+- post.html: Use for blog posts
+
+#### Misc.
+
+- The theme supports jekyll-feed, default link is to `/blog/feed.xml`
+- It is expected for the homepage to mostly be a set of links to other areas on the site. Use of the .nav class is recommended to wrap your links in:
+```html
+<div class="nav">
+  <a href="/blog">blog</a>
+  <a href="/blog/feed.xml">rss</a>
+</div>
+<div class="nav">
+  <a href="#">about</a>
+  <a href="#">archive</a>
+</div>
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/summoner. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pinecat/summoner-jekyll-theme.
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `summoner.gemspec` accordingly.
+```sh
+git clone https://github.com/pinecat/summoner-jekyll-theme
+cd summoner-jekyll-theme
+bundle
+```
 
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The fonts shipped with the theme are all under the OFL, and a copy of each font's license can be found in the `_data` directory.
