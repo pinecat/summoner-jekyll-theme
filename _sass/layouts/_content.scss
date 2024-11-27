@@ -1,7 +1,9 @@
+@use "../mixins/media";
+
 .content {
   padding: var(--space-m);
 
-  @include media(breakpoint) {
+  @include media.media(breakpoint) {
     font-size: var(--font-size-m);
     margin-left: auto;
     margin-right: auto;

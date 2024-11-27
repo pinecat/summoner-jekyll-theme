@@ -1,29 +1,29 @@
 // Mixins
-@import "mixins/media";
-@import "mixins/highlight";
+@use "mixins/media";
+@use "mixins/highlight";
 
 // Configurations
-@import "config/fonts";
-@import "config/variables";
-@import "config/reset";
+@use "config/fonts";
+@use "config/variables";
+@use "config/reset";
 
 // Components
-@import "components/date";
-@import "components/listing";
-@import "components/nav/img";
-@import "components/nav/link";
-@import "components/nav";
-@import "components/paginator/link";
-@import "components/paginator/span";
-@import "components/paginator";
-@import "components/post/code";
-@import "components/post/img";
-@import "components/post/paragraph";
-@import "components/motif";
-@import "components/spacing";
-@import "components/tag";
+@use "components/date";
+@use "components/listing";
+@use "components/nav/img";
+@use "components/nav/link";
+@use "components/nav";
+@use "components/paginator/link" as link2;
+@use "components/paginator/span";
+@use "components/paginator";
+@use "components/post/code";
+@use "components/post/img" as img2;
+@use "components/post/paragraph";
+@use "components/motif";
+@use "components/spacing";
+@use "components/tag";
 
 // Layouts
-@import "layouts/404";
-@import "layouts/content";
-@import "layouts/landing";
+@use "layouts/missing";
+@use "layouts/content";
+@use "layouts/landing";

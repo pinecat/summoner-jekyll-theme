@@ -1,3 +1,5 @@
+@use "../mixins/media";
+
 *,
 *::before,
 *::after {
@@ -92,7 +94,7 @@ li {
   margin-left: 20px;
   font-size: var(--font-size-xxl);
 
-  @include media(breakpoint) {
+  @include media.media(breakpoint) {
     font-size: var(--font-size-m);
   }
 }

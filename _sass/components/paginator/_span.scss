@@ -1,3 +1,5 @@
+@use "../../mixins/media";
+
 .paginator span {
   text-decoration: none;
   color: var(--color-text-muted);
@@ -5,7 +7,7 @@
   font-family: var(--font-family-syne);
   font-size: var(--font-size-xxl);
 
-  @include media(breakpoint) {
+  @include media.media(breakpoint) {
     font-size: var(--font-size-m);
   }
 }

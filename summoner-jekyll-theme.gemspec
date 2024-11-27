@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "summoner-jekyll-theme"
-  spec.version       = "1.3.6"
+  spec.version       = "1.4.0"
   spec.authors       = ["Rory Dudley"]
   spec.email         = ["rory.dudley@gmail.com"]
 
@@ -10,5 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://summoning.net"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+    f.match(/^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)/i)
+  end
 end

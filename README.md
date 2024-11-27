@@ -31,11 +31,11 @@ Or install it yourself as:
 
 #### Layouts
 
-- 404.html: Default 404 page with SMT imagery, set permalink if using pretty links
+- 404.html: Default 404 page, set permalink if using pretty links
 - archive.html: List tag types based on jekyll-archives tags
 - blog.html: Post listings, pagination supported via jekyll-paginate-v2
 - default.html: Minimum layout necessary for including CSS and JS
-- index.html: Homepage with SMT imagery and navigation
+- index.html: Homepage and navigation
 - page.html: Use for miscellaneous pages (about, contact, etc.)
 - post.html: Use for blog posts
 
