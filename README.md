@@ -44,16 +44,18 @@ Or install it yourself with:
 #### Misc.
 
 - The theme supports jekyll-feed, default link is to `/blog/feed.xml`
-- It is expected for the homepage to mostly be a set of links to other areas on the site. Use of the .nav class is recommended to wrap your links in:
+- It is expected for the homepage to mostly be a set of links to other
+areas on the site. Use of the `nav` element is recommended to wrap your
+links in:
 ```html
-<div class="nav">
+<nav>
   <a href="/blog">blog</a>
   <a href="/blog/feed.xml">rss</a>
-</div>
-<div class="nav">
+</nav>
+<nav>
   <a href="#">about</a>
   <a href="#">archive</a>
-</div>
+</nav>
 ```
 
 ## Contributing
