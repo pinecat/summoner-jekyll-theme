@@ -1,6 +1,7 @@
 # summoner-jekyll-theme
 
-My [Jekyll](https://jekyllrb.com/) theme for my personal blog, https://summoning.net, designed to be simple and minimal.
+My [Jekyll](https://jekyllrb.com/) theme for my personal blog,
+https://summoning.net, designed to be simple and minimal.
 
 ## Installation
 
@@ -14,7 +15,8 @@ And add this line to your Jekyll site's `_config.yml`:
 theme: summoner-jekyll-theme
 ```
 
-If you're using the `github-pages` gem, use `remote_theme` in `_config.yml` intead:
+If you're using the `github-pages` gem, use `remote_theme` in
+`_config.yml` intead:
 ```yaml
 remote_theme: pinecat/summoner-jekyll-theme
 ```
@@ -23,7 +25,7 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself with:
 
     $ gem install summoner-jekyll-theme
 
@@ -56,7 +58,8 @@ Or install it yourself as:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pinecat/summoner-jekyll-theme.
+Bug reports and pull requests are welcome on GitHub at
+https://github.com/pinecat/summoner-jekyll-theme.
 
 ## Development
 
@@ -66,7 +69,17 @@ cd summoner-jekyll-theme
 bundle
 ```
 
+## Credits
+
+The images on the index and 404 pages, respectively, were provided under
+[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) by
+[VeskScans](https://megamitensei.fandom.com/wiki/User:VeskScans) on the
+[Megami Tensei
+Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki).
+
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-The fonts shipped with the theme are all under the OFL, and a copy of each font's license can be found in the `_data` directory.
+The theme is available as open source under the terms of the [MIT
+License](https://opensource.org/licenses/MIT). The fonts shipped with
+the theme are all under the OFL, and a copy of each font's license can
+be found in the `_data` directory.
