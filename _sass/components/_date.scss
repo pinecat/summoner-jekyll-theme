@@ -1,3 +1,11 @@
+@use "../mixins/media";
+
 date {
-  float: right;
+  float: none;
+  white-space: collapse;
+  display: table;
+
+  @include media.media(breakpoint) {
+    float: right;
+  }
 }
