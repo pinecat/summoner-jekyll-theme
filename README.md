@@ -71,14 +71,6 @@ cd summoner-jekyll-theme
 bundle
 ```
 
-## Credits
-
-The images on the index and 404 pages, respectively, were provided under
-[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) by
-[VeskScans](https://megamitensei.fandom.com/wiki/User:VeskScans) on the
-[Megami Tensei
-Wiki](https://megamitensei.fandom.com/wiki/Megami_Tensei_Wiki).
-
 ## License
 
 The theme is available as open source under the terms of the [MIT
