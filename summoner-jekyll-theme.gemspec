@@ -2,9 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name = "summoner-jekyll-theme"
-  spec.version = "2.1.3"
+  spec.version = "2.1.1"
   spec.authors = ["Rory Dudley"]
   spec.email = ["rory.dudley@gmail.com"]
+
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.summary = "My custom jekyll theme for https://summoning.net/."
   spec.homepage = "https://summoning.net"
@@ -13,4 +15,5 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").select do |f|
     f.match(/^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)/i)
   end
+  spec.metadata["rubygems_mfa_required"] = "true"
 end
