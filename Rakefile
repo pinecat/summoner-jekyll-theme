@@ -3,6 +3,8 @@
 require "listen"
 require "rubocop/rake_task"
 
+load "summoner-jekyll-theme.gemspec"
+
 RuboCop::RakeTask.new
 
 Signal.trap("INT") { exit 0 }
@@ -43,4 +45,12 @@ task :refer do
   references.gsub!("---\n", "")
   references = "---\n---\n#{references}"
   File.write("_bibliography/references.bib", references)
+end
+
+desc "Publish to rubygems.org"
+task :release do
+  spec = Gem::Specification.load("summoner-jekyll-theme.gemspec")
+  sh "gem build"
+  sh "gem push summoner-jekyll-theme-#{spec.version}.gem"
+  FileUtils.rm_rf(Dir.glob("*.gem"))
 end
