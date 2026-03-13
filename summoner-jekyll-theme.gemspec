@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = "summoner-jekyll-theme"
-  spec.version = "2.2.0"
+  spec.version = "2.2.1"
   spec.authors = ["Rory Dudley"]
   spec.email = ["rory@summoning.net"]
 
