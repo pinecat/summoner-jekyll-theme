@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name = "summoner-jekyll-theme"
-  spec.version = "2.1.2"
+  spec.version = "2.2.0"
   spec.authors = ["Rory Dudley"]
-  spec.email = ["rory.dudley@gmail.com"]
+  spec.email = ["rory@summoning.net"]
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
