@@ -50,7 +50,7 @@ links in:
 ```html
 <nav>
   <a href="/blog">blog</a>
-  <a href="/blog/feed.xml">rss</a>
+  <a href="/feed.xml">rss</a>
 </nav>
 <nav>
   <a href="#">about</a>

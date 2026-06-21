@@ -1,0 +1,56 @@
+.content p a {
+  color: #6db9c6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content p a:hover {
+  color: #90e2dd;
+  text-decoration: none;
+}
+
+.content p a:visited {
+  color: #c792eb;
+  text-decoration: none;
+}
+
+.content ul a {
+  color: #6db9c6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content ul a:hover {
+  color: #90e2dd;
+  text-decoration: none;
+}
+
+.content ul a:visited {
+  color: #c792eb;
+  text-decoration: none;
+}
+
+a.citation {
+  color: var(--color-text-body) !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+
+a.citation:hover {
+  text-decoration: underline !important;
+}
+
+.citation {
+  font-size: 12px;
+  vertical-align: super;
+  text-decoration: none !important;
+}
+
+.missing a {
+  text-decoration: underline;
+}
+
+.missing a:hover {
+  color: #76c8d7;
+  text-decoration: underline;
+}
